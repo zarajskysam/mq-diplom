@@ -424,17 +424,19 @@ a {
     .container {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     .header {
         background: url('../img/football_1280.jpg') center center no-repeat;
         background-size: cover; 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
     }
     .logo {
         width: 200px;
+        margin-bottom: 0;
     }
 
     .header-title {
@@ -442,6 +444,10 @@ a {
         margin-left: 7%;
         margin-bottom: 0;
     }
+
+    .header-title span {
+        margin: 0;
+    } 
 
     .header-title-part {
         width: 85%;
@@ -610,8 +616,8 @@ a {
     .footer {
         background-color: url('../img/game_1280.jpg') center center no-repeat;
         background-size: cover;
-        padding-top: 10vh;
-        padding-bottom: 20px;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
 
     }
     
@@ -637,6 +643,7 @@ a {
         text-align: center;
         font-size: 80px;
         margin: 0;
+        line-height: 60px;
     }
 
     .footer-links {
