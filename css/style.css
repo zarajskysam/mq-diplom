@@ -315,6 +315,7 @@ a {
     position: absolute;
     left: 4.5%;
     bottom: -11px;
+    z-index: 22;
 }
 
 .guides-items-number::before {
@@ -428,7 +429,9 @@ a {
     .header {
         background: url('../img/football_1280.jpg') center center no-repeat;
         background-size: cover; 
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .logo {
         width: 200px;
@@ -465,7 +468,7 @@ a {
     }
 
     .header-item-url-box {
-        width: 200px;
+        width: 220px;
         justify-content: center;
     }
 
@@ -607,41 +610,52 @@ a {
     .footer {
         background-color: url('../img/game_1280.jpg') center center no-repeat;
         background-size: cover;
-        padding-top: 125px;
-    }
+        padding-top: 10vh;
+        padding-bottom: 20px;
 
+    }
+    
+    .footer-box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     .footer-logo {
         height: 138px;
         width: 132px;
-        margin-bottom: 81px;
+        margin:0 auto;
     }
 
     .footer-logo svg {
         width: 100px;
+        margin: 0;  
     }
 
     .footer-content {
-        margin-bottom: 280px;
+        text-align: center;
         font-size: 80px;
-    }
-
-    .footer-content span {
-        font-size: 36px;
+        margin: 0;
     }
 
     .footer-links {
-        margin-bottom: 53px;
+        margin: 0;
     }
 
-    .footer-logo-bottom {
-        margin-bottom: 22px;
+    .footer-content span {
+        font-size: 34px;
     }
+
 }
 
 @media (min-width:961px) {
     .container {
         width: 79.7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     /*header*/
@@ -650,33 +664,25 @@ a {
         box-sizing: border-box;
         background: url('../img/football_1920.jpg') center center no-repeat;
         background-size: cover;
-        padding-top: 4.6vh;
+        padding-top: 7vh;
+        padding-bottom: 5vh;
     }
 
     .logo {
         width: 192px;
-        margin-bottom: 20vh;
+        margin: 0 auto;
     }
 
     .header-title {
         font-size: 90px;
         display: flex;
         flex-direction: column;
-
     }
 
-    .header-title-part {
-        display: inline-block;
-        padding: 0;
+    .header-title span{
         margin: 0;
     }
 
-    .header-title-part:nth-child(n+2) {
-        align-self: flex-end;
-        width: 100%;
-        margin-bottom: 20vh;
-        text-align: right;
-    }
 
     .header-links {
         display: flex;
@@ -864,9 +870,16 @@ a {
         /*footer*/
 
         .footer {
-            padding-top: 14%;
+            padding-top: 7vh;
             box-sizing: border-box;
             height: 100vh;
+        }
+
+        .footer-box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         
         .footer-info-box {
@@ -879,11 +892,14 @@ a {
             margin: 0 auto;
         }
 
+        .footer-info-box {
+            margin: 0;
+        }
+        
         .footer-logo {
             margin: 0;
             height: 138px;
             width: 132px;
-            margin-right: 38px;
         }
 
         .footer-logo svg {
@@ -901,9 +917,8 @@ a {
         }
 
         .footer-links {
-            margin-bottom: 10vh;
+            margin: 0;
         }
-
 
         .footer-logo-bottom {
             margin: 0 auto;
